@@ -11,6 +11,6 @@ When prompted to take your turn type in one of:
 
 `CALL, RAISE, FOLD, CHECK, BET`
 
-If raising or folding specify amount too.
+If raising or betting specify the amount too.
 
 E.g. `RAISE 20`
