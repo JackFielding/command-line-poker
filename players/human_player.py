@@ -39,6 +39,11 @@ class HumanPlayer(Player):
                         print("If facing a bet action must be one of: {} (found: {})".format(allowed_actions, action))
                         print("Please try again...")
                         continue
+                    if action is Action.RAISE and amount < min(self.balance, 2 * to_call):
+                        print("The minimum raise is the smaller of (2x the previous raise) and all in, i.e. {}".format(
+                            min(2 * to_call, self.balance)))
+                        print("Please try again...")
+                        continue
                 break
             else:
                 if opposing_action is Action.CALL:
