@@ -6,3 +6,9 @@ play poker against a computer on the command line
 ```bash
 python poker.py --name myName --num-hands 10
 ```
+
+When prompted to take your turn type in one of:
+`CALL, RAISE, FOLD, CHECK, BET`
+If raising or folding specify amount too.
+E.g.
+`RAISE 20`
